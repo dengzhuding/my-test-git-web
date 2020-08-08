@@ -1,0 +1,24 @@
+{
+  "name": "my-test-git-web",
+  "version": "1.0.0",
+  "description": "hello world.",
+  "main": "service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node service.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dengzhuding/my-test-git-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dengzhuding/my-test-git-web/issues"
+  },
+  "homepage": "https://github.com/dengzhuding/my-test-git-web#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2"
+  }
+}
