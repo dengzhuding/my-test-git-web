@@ -10,3 +10,13 @@ services:
       - "9088:9088"
     environment:
       ENV: dev
+    external_links:
+      - demo:minions-service
+    networks:
+      minions:
+        ipv4_address: 172.31.0.14
+        
+networks:
+  minions:
+    external:
+      name: minions
