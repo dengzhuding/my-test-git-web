@@ -1,7 +1,8 @@
-my-test-git-web:
-  build : .
-ports:
- - "9088:9088"
-environment:
- ENV: DEV
-
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "9088:9088"
+    environment:
+      ENV: dev

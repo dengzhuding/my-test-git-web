@@ -5,7 +5,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const proxyHost = 'http://192.168.124.37/';
+const proxyHost = 'http://192.168.124.37:8080/';
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use('/', proxy(proxyHost));
 
